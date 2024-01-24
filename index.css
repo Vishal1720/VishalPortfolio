@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+            
+    background-size: cover;
+    background-image: url("bg1.jpg");
+}
+.main{
+    width:100% !important;
+    background-color: rgb(19, 118, 199);
+    padding:6px;
+    display: flex;
+    align-items: center;
+    
+}
+img{
+    width: 100px;
+    height:100px;
+}
+#pfp{
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+    margin-left: 200px;
+    
+}
+h1{
+    height:100%;
+    margin-top:40px;
+    color:white;
+    font-size: 94px;
+    margin-left: 20px;
+}
+#linkedin,#github{
+    margin-left: 36px;
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(55, 131, 194);
+    height: 66px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    height:inherit;
+    font-size:51px;
+    color: aliceblue;
+    margin-left: 30px;
+}
+#highlight{
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+.links{
+    margin: auto;
+    height: inherit;
+    margin-bottom: 10px;
+    margin-top:10px;
+    
+}

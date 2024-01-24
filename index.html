@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+        color:white !important;
+       }
+        p {
+            font-size: 24px;
+        }
+        img{
+            width: 200px;
+            height:200px;
+        }
+        #JS{
+            width:160px;
+            height: 160px;
+            margin-left: 10px;
+        }
+        #CSS{
+            width: 300px;
+        }
+        #Java{
+            margin-left: 50px;
+        }
+        #PHP{
+            margin-left: 20px;
+            width:300px;
+            height:150px;
+        }
+        .acxtxt{
+            width:330px;
+            position: absolute;
+            top:95%;    
+        }
+        .achievement{
+            width: 100%;
+            height:600px;
+            
+            background-image: url("AboutMe/2.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: changeimage alternate-reverse ease-in-out  10s ;
+        }
+        h2{
+            margin-top:10px;
+            margin-bottom: 10px;
+            text-decoration:underline;
+            font-size:33px;
+        }
+        @keyframes changeimage{
+            from{
+background-image: url("AboutMe/2.jpg");
+            }
+            to{
+background-image: url("AboutMe/1.jpg");
+            }
+        }
+
+       
+        #seminar{
+            margin-left: 30%;
+            font-size: 42px;
+        }
+        
+        .seminar{
+            width:100%;
+            height:600px;
+            background-image: url("AboutMe/seminar1.jpg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: seminar 4s linear infinite;
+        }
+        @keyframes seminar {
+            from{background-image: url("AboutMe/seminar1.jpg");}
+            to{background-image: url("AboutMe/seminar2.jpg");}
+        }
+        .courses{
+            min-width:856px;
+            max-width: 856px;
+            min-height:600px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin-left: 22%;
+            animation: changecourse 10s linear infinite;
+            
+        }
+        
+        #course{
+            margin-left:38%;
+            font-size:42px;
+        }
+        
+        #crs1,#crs2,#crs3,#crs4{
+            width:inherit;
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+           margin-left: 10px;
+           
+        }  
+        button{
+            background-color: brown;
+            color: aliceblue;
+            margin-left: 50%;
+            font-size: 27px;
+            padding: 4px;
+        }  </style>
+</head>
+<body>
+    <div class="main">
+        <img src="pfpsqr1.png" id="pfp">
+        <h1>Vishal Shetty</h1>
+        
+    </div>
+    <nav id="navbar">
+        <div class="links">
+        <a href="index.html" id="highlight">About Me</a>
+         <a href="achieve.html">Project</a>
+         <a href="Education.html">Education</a>
+         <a href="contacts.html">Contact</a>
+        </div>
+    </nav>
+    <h2>About Me </h2>
+    <p id="summary">
+        I am a dedicated BCA student with a passion for coding and problem-solving. 
+        I am proud to have won the coding competition at Shree Devi College in 2023 
+        and emerged as the champion in the inter-year coding competition in my college 
+        for two consecutive years. These achievements reflect my exceptional programming 
+        skills and ability to tackle complex challenges
+    </p>
+    <h2>Skills</h2>
+    <div><img src="prog/html.png" alt="HTML">
+        <img src="prog/JS.svg" alt="JS" id="JS">
+        <img src="prog/CSS.png" id="CSS" alt="CSS">
+        <img src="prog/python.png" alt="python">
+        <img src="prog/java.png" alt="Java" id="Java">
+    <img src="prog/php.png" alt="PHP" id="PHP"></div>
+
+   <h2>
+    Achievement
+   </h2>
+   <div class="achievement"></div>
+   <div class="acxtxt">
+   <p >First prize in coding competition at Medha'23 a National level Technical Cultural Fest by Shree Devi 
+    Institute of Technology College on 5th &6th May 2023</p>
+</div>
+<h2 id="course">Courses and Workshop </h2>
+<div class="courses">
+    <img id="crs1" src="certificates/1.png" />
+    <img id="crs2" src="certificates/2.png"/>
+    <img  id="crs3" src="certificates/3.png"/>
+    <img  id="crs4" src="certificates/4.png"/>
+</div>
+<button onclick="nextcourse()">Next</button>
+
+
+
+
+<h2 id="seminar">A talk on Web development by me</h2>
+<div class="seminar"></div>
+</div>
+<script>
+    var course=document.getElementById("crs1");
+    // course.style.marginLeft+="-865px";
+    var count=0;
+    var inc="865px";
+    var margin=course.style.marginLeft;
+    course.style.transition="2s";
+    function nextcourse(){
+        if(count==0)
+        {
+    course.style.marginLeft="-860px";
+    count++;
+        }
+else if(count == 1 )
+{
+    course.style.marginLeft="-1726px";
+    count++;
+    }
+    else if(count == 2 )
+{
+    course.style.marginLeft="-2591px";
+    count++;
+    }
+    else if(count == 3)
+{
+    course.style.marginLeft=margin;
+    count=0;
+}
+
+}
+</script>
+</body>
+</html>

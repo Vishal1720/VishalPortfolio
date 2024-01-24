@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+            color:white;
+        }
+        li{
+            list-style-type: disc;
+        }
+        #heading{
+font-size: 43px;
+
+        }
+        li,h3,span{
+            font-size: 27px;
+        }
+        .textContent{
+            margin-left: 10%;
+        }
+        .ttt{
+            background-image: url("ttt/1.jpg");
+            background-size:contain;
+            background-repeat: no-repeat;
+
+            background-position: center;
+            width: 230px;
+            height: 500px;
+            position: absolute;
+            left: 75%;
+            top: 245px;
+            border: 3px black solid ;
+            animation: changeimages 20s ease infinite ;
+            
+        }
+
+        @keyframes changeimages{
+            0%{
+    background-image: url("ttt/1.jpg");
+}
+            12.5%{
+            background-image: url("ttt/2.jpg");
+            }
+            25%{
+background-image: url("ttt/3.jpg");
+}
+37.5%{
+    background-image: url("ttt/4.jpg");
+}
+50%{
+    background-image: url("ttt/5.jpg");
+}
+62.5%{
+    background-image: url("ttt/6.jpg");
+}
+75%{
+    background-image: url("ttt/7.jpg");
+}
+87.5%{
+    background-image: url("ttt/8.jpg");
+}
+100%{
+    background-image: url("ttt/1.jpg");
+}
+        }
+
+        h3{
+            text-decoration: underline;
+            margin-top:15px;
+        }
+        #tech{
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="pfpsqr1.png" id="pfp">
+        <h1>Vishal Shetty</h1>
+        
+    </div>
+    <nav id="navbar">
+        <div class="links">
+        <a href="index.html">About Me</a>
+         <a href="achieve.html" id="highlight">Project</a>
+         <a href="Education.html">Education</a>
+         <a href="contacts.html">Contact</a>
+        </div>
+    </nav>
+    <div class="textContent">
+        <h3 id="heading">Tic Tac Toe</h3>
+        <span><h3 id="tech">Technologies used:</h3>      Android Studio using Java</span>
+<br><span><strong> Features:</strong></span>
+<div class="ttt"></div>
+    <h3>1.Player VS Player</h3> 
+    
+        <li> Takes names of both players from the user</li>
+    <li>The first player starts first</li>
+    <li>The user is notified about the turn of player</li>
+    <li>The player who wins gets one point</li>
+    <li>Retry button is used to restart the game without interefering with scores</li>
+
+    <h3>2.Player Vs bot</h3>
+    <li>Takes name of the player </li>
+    <li>User gets to choose from three difficulty</li>
+    <li>Easy mode is simply random </li>
+    <li>Normal mode just tries to stop you from winning</li>
+    <li>Hard mode first checks if bot can win then it tries to stop you</li>
+</div>
+</body>
+</html>
