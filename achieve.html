@@ -75,6 +75,31 @@ background-image: url("ttt/3.jpg");
         #tech{
             display:inline;
         }
+        .lekhak{
+            background-image: url("lekhak/1.png");
+            background-size:contain;
+            background-repeat: no-repeat;
+            border: 2px solid white;
+
+            background-position: center;
+            width:670px;
+            height:340px;
+        }
+      
+        #lekhakdiv{
+            width:670px;
+            height:340px;
+            overflow: hidden;
+            margin:30px;
+            transition:5s;
+position: absolute;
+top:800px;
+left:810px;
+display: flex;
+        }
+        #img1{
+            transition: margin-left 10s ease;
+        }
     </style>
 </head>
 <body>
@@ -111,5 +136,53 @@ background-image: url("ttt/3.jpg");
     <li>Normal mode just tries to stop you from winning</li>
     <li>Hard mode first checks if bot can win then it tries to stop you</li>
 </div>
+
+<h3>Lekhak</h3>
+<span><h3 id="tech">Technologies used:</h3>HTML,CSS,JS,PHP</span>
+<h3>Signin/Login</h3>
+    <li>Allows you to register yourself </li>
+    <li>Allows you to login</li>
+    
+    <h3>Home section</h3>
+    <li>Contains stories and poems </li>
+    <li>title,author and description is seen here</li>
+
+    <h3>Poem section and Stories</h3>
+    <li>Contains poems/stories written by users respectively </li>
+    <li>Writer's name is mentioned with each poem</li>
+
+    <h3>Write section</h3>
+    <li>Allows you to write poems/stories for poem and stories section </li>
+    <li>Your name is automatically stored as the writeer since you logged in</li>
+<section id="lekhakdiv" onclick="changeit()">
+    <img class="lekhak" src="lekhak/1.png" id="img1"></img>
+    <img class="lekhak" src="lekhak/2.png"></img>
+    <img class="lekhak" src="lekhak/3.png"></img>
+    <img class="lekhak" src="lekhak/4.png"></img>
+    <img class="lekhak" src="lekhak/5.png"></img>
+    <img class="lekhak" src="lekhak/6.png"></img>
+    <img class="lekhak" src="lekhak/7.png"></img>
+    <img class="lekhak" src="lekhak/8.png"></img>
+    <img class="lekhak" src="lekhak/9.png"></img>
+    <img class="lekhak" src="lekhak/10.png"></img>
+</section>
+
+
+<script>
+    var img1=document.getElementById("img1");
+    var count=100;
+   
+function changeit(){
+img1.style.transition="3s";
+    img1.style.marginLeft=`-${count}%`;
+    count=count+100;
+    console.log(count);
+    if(count===1000)
+    {
+    count=0;}
+}
+setInterval(changeit,4000);
+    
+</script>
 </body>
 </html>
