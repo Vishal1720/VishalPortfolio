@@ -6,14 +6,17 @@
 body{
             
     background-size: cover;
-    background-image: url("bg1.jpg");
+    background-image: url("bg3.jpg");
 }
 .main{
-    width:100% !important;
-    background-color: rgb(19, 118, 199);
+    width:100% ;
+    background-image: url("./header/h1.jpg");
+    background-size: cover;
+    background-position: center;
+    
     padding:6px;
     display: flex;
-    align-items: center;
+    
     
 }
 img{
@@ -21,10 +24,10 @@ img{
     height:100px;
 }
 #pfp{
-    width:150px;
-    height:150px;
+    width:127px;
+    height:127px;
     border-radius: 100%;
-    margin-left: 200px;
+    margin-left: 10px;
     
 }
 h1{
@@ -38,22 +41,14 @@ h1{
     margin-left: 36px;
     
 }
-#navbar{
-    display: flex;
-    align-items: center;
-    background-color: rgb(55, 131, 194);
-    height: 70px;
-   
-    
-    overflow: hidden;
-    width: 100%;
-}
+
 a{
     text-decoration: none;
     height:inherit;
     font-size:51px;
 
-    color: aliceblue;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px black;
     margin-left: 30px;
 }
 #highlight{
@@ -61,11 +56,20 @@ a{
     text-decoration-color: aliceblue;
 }
 .links{
-    margin: auto;
+   
     height: inherit;
-    margin-bottom: 10px;
-    margin-top:10px;
-    padding: 10px;
+    margin-top: 2.9%;
+    font-size: 35px;
+    color: black;
+    
   
     
+}
+#name{
+    text-shadow: 3px 3px rgb(185, 168, 168);
+    display: inline;
+    font-size: 77px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2.2px 2.2px black;
+    margin-top: 1.7%;
 }

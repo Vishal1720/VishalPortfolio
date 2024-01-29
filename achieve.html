@@ -69,11 +69,25 @@ background-image: url("ttt/3.jpg");
         }
 
         h3{
-            text-decoration: underline;
+            
             margin-top:15px;
+            text-shadow: 2px 2px 2px black ;
         }
         #tech{
             display:inline;
+        }
+       
+      
+        #lekhakdiv{
+            margin:0 auto;
+            width:850px;
+            height:500px;
+            overflow: hidden;
+           
+            transition:5s;
+
+
+display: flex;
         }
         .lekhak{
             background-image: url("lekhak/1.png");
@@ -82,44 +96,36 @@ background-image: url("ttt/3.jpg");
             border: 2px solid white;
 
             background-position: center;
-            width:670px;
-            height:340px;
-        }
-      
-        #lekhakdiv{
-            width:670px;
-            height:340px;
-            overflow: hidden;
-            margin:30px;
-            transition:5s;
-position: absolute;
-top:800px;
-left:810px;
-display: flex;
+            width:inherit;
+            height:inherit;
         }
         #img1{
             transition: margin-left 10s ease;
+        }
+        #lekhaktext{
+            margin-left: 22%;
+        }
+        li,span{
+            text-shadow: 1.5px 1.5px 1px black;
         }
     </style>
 </head>
 <body>
     <div class="main">
         <img src="pfpsqr1.png" id="pfp">
-        <h1>Vishal Shetty</h1>
-        
-    </div>
-    <nav id="navbar">
+        <h1 id="name">Vishal Shetty</h1>
         <div class="links">
-        <a href="index.html">About Me</a>
-         <a href="achieve.html" id="highlight">Project</a>
-         <a href="Education.html">Education</a>
-         <a href="contacts.html">Contact</a>
-        </div>
-    </nav>
+            <a href="index.html" >About Me</a>
+             <a href="achieve.html" id="highlight">Project</a>
+             <a href="Education.html">Education</a>
+             <a href="contacts.html" >Contact</a>
+            </div>
+    </div>
+    
     <div class="textContent">
         <h3 id="heading">Tic Tac Toe</h3>
         <span><h3 id="tech">Technologies used:</h3>      Android Studio using Java</span>
-<br><span><strong> Features:</strong></span>
+<br><h3><strong> Features:</strong></h3>
 <div class="ttt"></div>
     <h3>1.Player VS Player</h3> 
     
@@ -137,7 +143,20 @@ display: flex;
     <li>Hard mode first checks if bot can win then it tries to stop you</li>
 </div>
 
-<h3>Lekhak</h3>
+<h3 id="heading">Lekhak</h3>
+<section id="lekhakdiv" onclick="changeit()">
+    <img class="lekhak" src="lekhak/1.png" id="img1"></img>
+    <img class="lekhak" src="lekhak/2.png"></img>
+    <img class="lekhak" src="lekhak/3.png"></img>
+    <img class="lekhak" src="lekhak/4.png"></img>
+    <img class="lekhak" src="lekhak/5.png"></img>
+    <img class="lekhak" src="lekhak/6.png"></img>
+    <img class="lekhak" src="lekhak/7.png"></img>
+    <img class="lekhak" src="lekhak/8.png"></img>
+    <img class="lekhak" src="lekhak/9.png"></img>
+    <img class="lekhak" src="lekhak/10.png"></img>
+</section>
+<div id="lekhaktext">
 <span><h3 id="tech">Technologies used:</h3>HTML,CSS,JS,PHP</span>
 <h3>Signin/Login</h3>
     <li>Allows you to register yourself </li>
@@ -154,18 +173,7 @@ display: flex;
     <h3>Write section</h3>
     <li>Allows you to write poems/stories for poem and stories section </li>
     <li>Your name is automatically stored as the writeer since you logged in</li>
-<section id="lekhakdiv" onclick="changeit()">
-    <img class="lekhak" src="lekhak/1.png" id="img1"></img>
-    <img class="lekhak" src="lekhak/2.png"></img>
-    <img class="lekhak" src="lekhak/3.png"></img>
-    <img class="lekhak" src="lekhak/4.png"></img>
-    <img class="lekhak" src="lekhak/5.png"></img>
-    <img class="lekhak" src="lekhak/6.png"></img>
-    <img class="lekhak" src="lekhak/7.png"></img>
-    <img class="lekhak" src="lekhak/8.png"></img>
-    <img class="lekhak" src="lekhak/9.png"></img>
-    <img class="lekhak" src="lekhak/10.png"></img>
-</section>
+</div>
 
 
 <script>
