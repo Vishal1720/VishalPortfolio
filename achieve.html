@@ -12,9 +12,9 @@
         li{
             list-style-type: disc;
         }
-        #heading{
-font-size: 43px;
-
+        .title{
+font-size: 53px;
+text-align: center;
         }
         li,h3,span{
             font-size: 27px;
@@ -32,7 +32,7 @@ font-size: 43px;
             height: 500px;
             position: absolute;
             left: 75%;
-            top: 245px;
+            top: 185px;
             border: 3px black solid ;
             animation: changeimages 20s ease infinite ;
             
@@ -108,6 +108,9 @@ display: flex;
         li,span{
             text-shadow: 1.5px 1.5px 1px black;
         }
+        #ttth3{
+            margin-left: -10%;
+        }
     </style>
 </head>
 <body>
@@ -123,7 +126,7 @@ display: flex;
     </div>
     
     <div class="textContent">
-        <h3 id="heading">Tic Tac Toe</h3>
+        <h3 class="title" id="ttth3">Tic Tac Toe</h3>
         <span><h3 id="tech">Technologies used:</h3>      Android Studio using Java</span>
 <br><h3><strong> Features:</strong></h3>
 <div class="ttt"></div>
@@ -143,7 +146,7 @@ display: flex;
     <li>Hard mode first checks if bot can win then it tries to stop you</li>
 </div>
 
-<h3 id="heading">Lekhak</h3>
+<h3 class="title" id="heading">Lekhak</h3>
 <section id="lekhakdiv" onclick="changeit()">
     <img class="lekhak" src="lekhak/1.png" id="img1"></img>
     <img class="lekhak" src="lekhak/2.png"></img>
