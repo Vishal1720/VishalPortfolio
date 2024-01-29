@@ -83,8 +83,8 @@ background-image: url("AboutMe/1.jpg");
             to{background-image: url("AboutMe/seminar2.jpg");}
         }
         .courses{
-            min-width:856px;
-            max-width: 856px;
+            min-width:850px;
+            max-width: 850px;
             min-height:600px;
             display: flex;
             align-items: center;
@@ -116,7 +116,15 @@ background-image: url("AboutMe/1.jpg");
             border-radius: 20px;
             margin-top: 10px;
             border: 1px solid whitesmoke;
-        }  </style>
+        }  
+        #backward{
+            transform:scaleX(-1);
+            width:60px;
+            height: 60px;
+            position: absolute;
+            top:210%;
+            left:17%;
+        }</style>
 </head>
 <body>
     <div class="main">
@@ -164,11 +172,8 @@ background-image: url("AboutMe/1.jpg");
     <img  id="crs4" src="certificates/4.png"/>
     <img id="crs5" src="certificates/5.png"/>
 </div>
-<button onclick="nextcourse()">Next</button>
-
-
-
-
+<img onclick="next()" src="./arrow.png" style="margin-left: 30%;width:60px;height: 60px;position: absolute;top:210%;left:50%;">
+<img onclick="prev()" src="./arrow.png"  id="backward">
 <h2 id="seminar">A talk on Web development by me</h2>
 <div class="seminar"></div>
 </div>
@@ -179,33 +184,25 @@ background-image: url("AboutMe/1.jpg");
     var inc="865px";
     var margin=course.style.marginLeft;
     course.style.transition="2s";
-    function nextcourse(){
-        if(count==0)
-        {
-    course.style.marginLeft="-860px";
-    count++;
-        }
-else if(count == 1 )
-{
-    course.style.marginLeft="-1726px";
-    count++;
+  
+function next(){
+    currentmarginleft=parseInt(course.style.marginLeft,10)||0;
+    newmarginleft=currentmarginleft-865;
+    if(newmarginleft <= -4325){
+        newmarginleft =0;
     }
-    else if(count == 2 )
-{
-    course.style.marginLeft="-2591px";
-    count++;
-    }
-    else if(count == 3)
-{
-    course.style.marginLeft="-3456px";
-count++;
-    
-}
-else{
-    course.style.marginLeft=margin;
-    count=0;
+    course.style.marginLeft=newmarginleft+"px";
+    console.log(newmarginleft);
 }
 
+function prev(){
+    currentmarginleft=parseInt(course.style.marginLeft,10)||0;
+    newmarginleft=currentmarginleft+865;
+    if(newmarginleft-865 >=0){
+        newmarginleft =0;
+    }
+    course.style.marginLeft=newmarginleft+"px";
+    console.log("prev new margin ",newmarginleft);
 }
 </script>
 </body>

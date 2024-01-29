@@ -46,14 +46,19 @@ a{
     text-decoration: none;
     height:inherit;
     font-size:51px;
-
+transition: 0.5s;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px black;
     margin-left: 30px;
 }
 #highlight{
-    text-decoration: underline;
-    text-decoration-color: aliceblue;
+    
+    animation: high 1s linear;
+    animation-fill-mode: backwards;
+}
+
+a:hover{
+    font-size: 56px;
 }
 .links{
    
