@@ -46,7 +46,12 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            animation: changeimage alternate-reverse ease-in-out  10s ;
+            
+        }
+        .achievement:hover{
+            animation: changeimage ease-in  2s ;
+            animation-fill-mode: forwards;
+            cursor:pointer;
         }
         h2{
             margin-top:10px;
@@ -172,7 +177,7 @@ background-image: url("AboutMe/1.jpg");
     <img  id="crs4" src="certificates/4.png"/>
     <img id="crs5" src="certificates/5.png"/>
 </div>
-<img onclick="next()" src="./arrow.png" style="margin-left: 30%;width:60px;height: 60px;position: absolute;top:210%;left:50%;">
+<img onclick="next()" src="./arrow.png" id="next" style="margin-left: 30%;width:60px;height: 60px;position: absolute;top:210%;left:50%;">
 <img onclick="prev()" src="./arrow.png"  id="backward">
 <h2 id="seminar">A talk on Web development by me</h2>
 <div class="seminar"></div>
@@ -184,12 +189,15 @@ background-image: url("AboutMe/1.jpg");
     var inc="865px";
     var margin=course.style.marginLeft;
     course.style.transition="2s";
-  
+  var nextbtn=document.getElementById("next");
+  var prevbtn=document.getElementById("backward");
 function next(){
     currentmarginleft=parseInt(course.style.marginLeft,10)||0;
+    prevbtn.style.visibility="visible";
     newmarginleft=currentmarginleft-865;
     if(newmarginleft <= -4325){
-        newmarginleft =0;
+        newmarginleft =-3460;
+        nextbtn.style.visibility="hidden";
     }
     course.style.marginLeft=newmarginleft+"px";
     console.log(newmarginleft);
@@ -197,12 +205,16 @@ function next(){
 
 function prev(){
     currentmarginleft=parseInt(course.style.marginLeft,10)||0;
+    console.log("Margin left ",currentmarginleft);
+   
     newmarginleft=currentmarginleft+865;
+    nextbtn.style.visibility="visible";
     if(newmarginleft-865 >=0){
         newmarginleft =0;
+        prevbtn.style.visibility="hidden";
     }
     course.style.marginLeft=newmarginleft+"px";
-    console.log("prev new margin ",newmarginleft);
+    
 }
 </script>
 </body>
