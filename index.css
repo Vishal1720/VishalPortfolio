@@ -10,7 +10,7 @@ body{
     background-image: url("bg3.jpg");
 }
 .main{
-    width:100% ;
+    width:100vw ;
     background-image: url("./header/h1.jpg");
     background-size: cover;
     background-position: center;
