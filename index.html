@@ -99,6 +99,10 @@ background-image: url("AboutMe/1.jpg");
             overflow: hidden;
             margin-left: 22%;
             animation: changecourse 10s linear infinite;
+            @media only screen and (max-device-width:1000px)
+            {
+                margin-left: 8%;
+            }
             
         }
         
@@ -132,8 +136,29 @@ background-image: url("AboutMe/1.jpg");
             position: absolute;
             top:210%;
             left:17%;
+            @media only screen and (max-device-width:1000px)
+            {
+                position: absolute;
+                top: 115%;
+                left: 1%;
+                width:60px;
+            height: 7vh;
+            width: 7vh;
+            }
         }
-        
+        #next{
+            margin-left: 30%;width:60px;height: 60px;position: absolute;top:210%;left:50%;
+            @media only screen and (max-device-width:1000px)
+            {
+                position: absolute;
+                top: 115%;
+                right: 1%;
+                width:60px;
+            height: 7vh;
+            width: 7vh;
+            }
+            
+        }
         </style>
         
 </head>
@@ -182,7 +207,7 @@ background-image: url("AboutMe/1.jpg");
     <img  id="crs4" src="certificates/4.png"/>
     <img id="crs5" src="certificates/5.png"/>
 </div>
-<img onclick="next()" src="./arrow.png" id="next" style="margin-left: 30%;width:60px;height: 60px;position: absolute;top:210%;left:50%;">
+<img onclick="next()" src="./arrow.png" id="next" >
 <img onclick="prev()" src="./arrow.png"  id="backward">
 <h2 id="seminar">A talk on Web development by me</h2>
 <div class="seminar"></div>
