@@ -11,7 +11,7 @@ body{
     @media only screen 
   and (max-device-width: 2000px)
   { background-image: none;
-    background-color: blue;
+    background-color: rgb(63, 103, 247);
  }
 }
 .main{
