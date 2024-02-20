@@ -9,7 +9,7 @@ body{
     background-size: cover;
     background-image: url("bg3.jpg");
     @media only screen 
-  and (max-device-width: 1000px)
+  and (max-device-width: 2000px)
   { background-image: none;
     background-color: blue;
  }
