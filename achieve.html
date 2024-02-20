@@ -22,6 +22,11 @@ text-align: center;
         }
         .textContent{
             margin-left: 10%;
+            @media only screen 
+  and (max-device-width: 2000px)
+  { display: flex;
+    flex-direction: column;
+ }
         }
         .ttt{
             background-image: url("ttt/1.jpg");
@@ -32,10 +37,24 @@ text-align: center;
             width: 255px;
             height: 560px;
             position: absolute;
+
             left: 75%;
             top: 185px;
             border: 3px black solid ;
             animation: changeimages 22s ease infinite ;
+            @media only screen 
+  and (max-device-width: 2000px)
+  { position: relative;
+    top:auto;
+    bottom: auto;
+    margin:0;
+
+    width: 100vw;
+    left: 0;
+    border: none;
+    margin-left: -10%;
+    margin-top:10px;
+ }
             
         }
 
