@@ -164,6 +164,8 @@ background-image: url("AboutMe/1.jpg");
         
 </head>
 <body style="text-shadow: 1.5px 1.5px 1.2px  rgb(16, 10, 10);">
+    <div  id="loader"></div>
+    <div class="content">
     <div class="main" style="width: 100%;">
         <img src="pfpsqr1.png" id="pfp">
         <h1 id="name">Vishal Shetty</h1>
@@ -210,7 +212,11 @@ background-image: url("AboutMe/1.jpg");
 <h2 id="seminar">A talk on Web development by me</h2>
 <div class="seminar"></div>
 </div>
+</div>
+<script src="loader.js"></script>
 <script>
+    
+
     var course=document.getElementById("crs1");
     // course.style.marginLeft+="-865px";
     var count=0;
@@ -244,6 +250,8 @@ function prev(){
     course.style.marginLeft=newmarginleft+"px";
     
 }
+
+
 </script>
 </body>
 </html>
