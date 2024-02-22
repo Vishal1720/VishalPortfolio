@@ -12,9 +12,11 @@
             margin-top: 6%;
 
             display: flex;
+            flex-wrap: wrap;
             @media only screen and (max-device-width:1000px){
-                flex-direction: column;
+                flex-direction: row;
                 margin-left: 0%;
+                flex-wrap: wrap;
                 justify-content: center;
             }
         }
@@ -28,6 +30,10 @@
             width:200px;
             height: 200px;
             transition: linear 0.2s;
+            @media only screen and (max-device-width:1000px){
+                width:130px;
+            height: 130px;
+            }
         }
         #blog{
             border-radius:29px ;
@@ -41,6 +47,10 @@
         #gmail{
             width:220px;
             height:190px;
+            @media only screen and (max-device-width:1000px){
+                width:160px;
+            height: 130px;
+            }
         }
         #gmail:hover{
             width:250px;
@@ -78,14 +88,14 @@
         <a href="https://github.com/Vishal1720/" target="_blank">
         <img src="./github-mark-white.svg" id="github" class="contact">
     </a>
-    </div>
+         </div>
 
     <div class="sub">
         <h2>Linkedin</h2>
         <a href="http://www.linkedin.com/in/VishalShetty17" target="_blank">
         <img src="./linkedin.png" class="contact">
     </a>
-     </div>
+       </div>
 
     <div class="sub">
         <h2>Blogger</h2>
