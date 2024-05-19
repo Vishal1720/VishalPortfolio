@@ -16,6 +16,8 @@ body{
     background-color: rgb(63, 103, 247);
  }
 }
+
+
 .main{
     width:100% ;
     background-image: url("./header/h1.jpg");
@@ -99,4 +101,7 @@ transition: 0.5s;
    
     
 }
+.textcenter{
+    text-align: center;
+ }
 
